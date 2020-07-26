@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     body {
-        background-image: url(5.png);
+        background-image: url(5.jpg);
         background-size: 100% 100%;
         background-attachment: fixed;
         font-size: 16px required;
@@ -187,7 +187,7 @@
             <div class="col-md-3">
                 
                 <ul class="b01">
-                    <li><a class="active bs01" href="#about">About </a></li>
+                    <li><a class = "bs01" href="#about">About </a></li>
                     <li><a class = "bs01" href="#id04">Syllabus Covered</a></li>
                     <li><a class = "bs01" href="#tb01"> Training Plan</a></li>
                     <li><a class = "bs01" href="#id03"> Detailed Schedule</a></li>
@@ -326,16 +326,4 @@
     </div>
 
     </body>
-   <script>
-// Add active class to the current button (highlight it)
-var header = document.getElementById("b01");
-var btns = header.getElementsByClassName("bs01");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
-</script>
 </html>
