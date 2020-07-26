@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        background-image: url(5.png);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        font-size: 16px required;
+        
+    }
+
+.b01 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: fixed;
+  
+  overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    margin-top:30px;
+}
+
+.bs01 {
+  display: block;
+  color: #000;
+  padding: 16px 16px;
+  text-decoration: none;
+    border-bottom: 1px solid grey;
+}
+
+.bs01.active, .bs01:hover {
+  background-color: lightgray;
+    text-decoration: none;
+    color: black;
+  
+}
+
+    body {
+        margin : 20px;
+        margin-top : 5px;
+    }
+    h1 {
+        display: inline;
+        top: 3px;
+        position: relative;
+        
+    }
+    .box-s1 {
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+        background-color: #f1f1f1;
+        position: fixed;
+        top: 8px;
+        width: 95%;
+    }
+    .col-md-9 {
+        
+        margin-top: 30px;
+        height: 79vh;
+        overflow: hidden;
+        color:white;
+        
+    }
+    .row {
+        margin-right: 0;
+    }
+    .table {
+        color: white;
+        width :100%;
+    }
+    .ht {
+        height: 100vh;
+    }
+    h6 {
+        color: greenyellow;
+    }
+    .detail {
+        float: right;
+        position: relative;
+        margin-right: 20px;
+        top: 16px;
+    }
+    #tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+#tooltip .tooltiptext {
+  visibility: hidden;
+  width: 170px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: -20px;
+  margin-left: -60px;
+    font-size:14px;
+}
+
+#tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+#tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+     #tooltip1 {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+#tooltip1 .tooltiptext1 {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 25px;
+  margin-left: -60px;
+    font-size:14px;
+}
+
+#tooltip1 .tooltiptext1::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+#tooltip1:hover .tooltiptext1 {
+  visibility: visible;
+}
+</style>
+</head>
+<body>
+    <div>
+    <div class = "box-s1">
+    <img src = "aac.png" alt = "AAC Tutorials" 
+         style = "width:78px;height:8vh">
+        <h1>Ashwin's Aptitude Classes</h1>
+        <span class="detail">
+                
+            <em class="fa fa-envelope " id = "tooltip" style="font-size:24px;margin-right: 10px">
+            <span class="tooltiptext">ashwinhosur123@gmail.com</span>
+            </em>
+        <em class="fa fa-phone" id = "tooltip1" style="font-size:24px">
+            <span class="tooltiptext1">9677353402 <br> 9952482052</span>
+            </em>
+        </span>
+
+    </div>
+        
+       <div class="container-fluid" style="margin-top:85px">
+           
+           <div class = "row">
+            <div class="col-md-3">
+                
+                <ul class="b01">
+                    <li><a class="active bs01" href="#about">About </a></li>
+                    <li><a class = "bs01" href="#id04">Syllabus Covered</a></li>
+                    <li><a class = "bs01" href="#tb01"> Training Plan</a></li>
+                    <li><a class = "bs01" href="#id03"> Detailed Schedule</a></li>
+                    <li><a class = "bs01" href="#id02">Program Highlights</a></li>
+                </ul>
+            
+        </div>
+            <div class = "col-md-9" style= "scroll-behavior: smooth;">
+                <div class = "ht">
+            <p id = "about">The training sessions will be handled by <strong>Mr. Ashwin</strong> who has <strong>5 years</strong> of teaching experience. He is an aspiring trainer who has trained over 50,000 students across colleges in India. He is an <strong><i>alumnus of SASTRA University</i></strong>, who bagged <strong>3 offers</strong> during his campus recruitment drives in 2015.</p> 
+        </div>
+                <div id = "id04"; style = "height: 100vh">
+                <h3 style="text-align: center;color:azure">Syllabus covered</h3>
+                    <h6>NFS (Need For Speed Maths) and Logical Puzzles Workshop:</h6>
+                    <p>A customised workshop designed for students to help them improve their calculation speed and invoke their Logical thinking ability. Various Speed Techniques include Addition & Subtraction, Squares, Square roots and cube roots, Multiplication, Divisibility rules, Percentages calculations, Ratio basics, etc…</p>
+                    
+                    <h6>Quantitative Ability and Data Interpretation:</h6>
+                    <p>Ratios & Proportions, Partnerships, Equations & Ages, Numbers, Averages, Percentages, Profit & Loss, Mixtures & Allegations, Simple & Compound interest, Time & Work, Pipes & Cisterns, Time, Speed & Distance, Permutations & Combinations, Probability, Bar graphs, Line graphs, Pie charts, Tabular based DI.</p>
+                    
+                    <h6>Logical Reasoning and Data Sufficiency:</h6>
+                    <p>Data Arrangements, Syllogisms, Blood relations, Cubes, Clocks, Coding & Decoding, Calendars, Directions, Coded Inequalities, Venn Diagrams, Data Sufficiency (Quant & Logical Based)</p>
+                    
+                    <h6>Special Orientation on Psychometric tests and Interviews:</h6>
+                    <p>Insights on Psychometric tests, necessary preparation plan for cracking Interviews along with Trainer’s Interview experience.</p>
+                    
+                    <h6>High-Level Aptitude covering additional topics:</h6>
+                    <p>Functions, Advanced Number systems, Advanced Permutations and Combinations, Progressions, Sequence and Series, Geometry and Mensuration.</p>
+                </div>
+                <div id = "tb01" style="height: 100vh">
+                    <h3 style="text-align: center; color: azure">Training Plan</h3>
+                    <p>Students will be given access to Company model papers of Quantitative Ability & Logical Reasoning (AMCAT, COCUBES, TCS, Infosys, etc.) to get accustomed to the Aptitude tests conducted by various companies.</p>
+                    <table class = "table table-bordered">
+                    <thead>
+      <tr style = "text-align: center;color:gold">
+        <th>S NO</th>
+        <th>Course Title</th>
+        <th>Approximate Duration (In hours)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>NFS (Need For Speed Maths) + Special Practice</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Puzzles and Problem Solving Session</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Quantitative Ability and Data Interpretation</td>
+        <td>50</td>
+      </tr>
+        <tr>
+        <td>4</td>
+        <td>Special Orientation on Psychometric tests, Cognitive Ability tests
+            and Interviews</td>
+        <td>5</td>
+      </tr>
+        <tr>
+        <td>5</td>
+        <td>Logical Reasoning and Data Sufficiency</td>
+        <td>25</td>
+      </tr>
+        <tr>
+        <td>6</td>
+        <td>High-Level Aptitude covering additional chapters</td>
+        <td>25</td>
+           </tr>
+        <tr>
+        <td></td>
+        <td>Total</td>
+        <td>120</td>
+      </tr>
+    </tbody>
+  </table>
+        </div>
+                <div id = "id03"; style = "height: 100vh">
+                 <table class = "table table-bordered">
+                     <tr>
+                     <td colspan="2" style = "text-align: center">
+                         The participants will be given access to the following tests.<br>Online Portal: <a href= " https://kiteacademy.learnyst.com/" target="_blank" style="text-decoration: underline">kiteacademy.learnyst.com</a>
+                         </td>
+                     </tr>
+                    
+      <tr style = "text-align: center;color: gold">
+        <th>Online</th>
+        <th>Description</th>
+      </tr>
+    
+    <tbody>
+      <tr>
+        <td>70+ Topic-wise tests</td>
+        <td>20+  (Level- 1 Conceptual Tests) (1.5 to 2 minutes per question)<br>
+20+ Speed Tests (30 seconds per question)<br>
+20+ Revision Tests (1 minute per question)
+</td>
+      </tr>
+      <tr>
+        <td>5+ Combined tests</td>
+        <td>3-4 topics combined Conceptual & Speed tests</td>
+      </tr>
+        <tr>
+        <td>5+ Sectional Tests</td>
+        <td>3 tests on Quantitative Ability and 2 tests on Logical Reasoning</td>
+      </tr>
+        <tr>
+        <td>10+ Company specific tests</td>
+        <td>Full-length mock tests of TCS, INFOSYS, WIPRO, CTS, ACCENTURE, IBM, CAPGEMINI covering AMCAT and COCUBES pattern, etc…</td>
+      </tr>
+    </tbody>
+  </table>
+                </div>
+                <div id = "id02"; style = "height: 100vh">
+                    <h3 style= "text-align: center;color:azure">Program Highlights</h3><br>
+                <ul style="width:50%;float: left;">
+                    <li>Innovative training using minimal formulae along with alternative techniques enabling students to manage time effectively.</li>
+                    <li>Tip-to-toe approach with in-depth coverage of concepts from basic to advanced level.</li>
+                    <li>Materials containing relevant questions for practice on every topic.</li>
+                    <li>Online platform having 50+ tests with topic-wise analysis, time-factor analysis and leadership board.</li>
+                    </ul>
+                    <ul style="width:50%;float: left">
+                    <li>3 differently-timed topic-wise tests on every topic enabling students to master each of them.</li>
+                        <li>Audio recordings to enhance conceptual understanding.</li>
+                        <li>Guidance and assistance post the classroom training through WhatsApp groups.</li>
+                        <li>Detailed Analysis on various company patterns.</li>
+                    </ul>
+                </div>
+                
+            </div>
+           </div>
+        </div>
+        
+    </div>
+
+    </body>
+   <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("b01");
+var btns = header.getElementsByClassName("bs01");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+</html>
